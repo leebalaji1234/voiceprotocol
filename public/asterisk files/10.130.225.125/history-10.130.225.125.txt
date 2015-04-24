@@ -1,0 +1,359 @@
+    1  cd /mnt
+    2  mkdir koko
+    3  mount /dev/cdrom koko/
+    4  cd koko
+    5  cp VMwareTools-9.4.0-1280544.tar.gz /tmp
+    6  cd /tmp
+    7  tar -xvf VMwareTools-9.4.0-1280544.tar.gz 
+    8  cd vmware-tools-distrib/
+    9  ./vmware-install.pl 
+   10  vi /etc/hosts
+   11  reboot
+   12  visudo
+   13  vi /etc/ssh/sshd_config
+   14  service sshd restart
+   15  useradd -m athanasios
+   16  passwd athanasios
+   17  visudo
+   18  vi /etc/ssh/sshd_config
+   19  service sshd restart
+   20  visudo
+   21  vi /etc/ssh/sshd_config
+   22  service sshd restart
+   23  yum upgrade
+   24  yum update
+   25  yum install make wget openssl-devel ncurses-devel newt-devel libxml2-devel kernel-devel gcc gcc-c++ sqlite-devel e2fsprogs-devel keyutils-libs-devel krb5-devel libogg libselinux-devel libsepol-devel libxml2-devel libtiff-devel gmp php-pear php-pear-DB php-gd php-mysql php-pdo kernel-devel ncurses-devel audiofile-devel libogg-devel openssl-develmysql httpdmysql-develmysql-server zlib-devel perl-DateManip sendmail-cf sox make
+   26  cd /usr/src/
+   27  wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-11-current.tar.gz
+   28  tar -zxvf asterisk-11-current.tar.gz 
+   29  ./configure --libdir=/usr/lib64 && make menuselect && make && make install
+   30  cd asterisk-11
+   31  cd asterisk-11.16.0/
+   32  ./configure --libdir=/usr/lib64 && make menuselect && make && make install
+   33  make samples
+   34  make config
+   35  service asterisk status
+   36  service asterisk start
+   37  service asterisk status
+   38  cdr-csv
+   39  cd /
+   40  exit
+   41   /var/lib/asterisk/agi-bin/
+   42  cd  /var/lib/asterisk/agi-bin/
+   43  ll
+   44  cd /etc/asterisk/
+   45  vi sip.conf 
+   46  asterisk -r
+   47   iptables -A INPUT -p udp -m udp --dport 5060 -j ACCEPT
+   48  nmap 10.130.225.125 -p 5060
+   49  service network restart
+   50  nmap 10.130.225.125 -p 5060
+   51  vi extensions.conf 
+   52  cp extensions.conf  extensions.example.conf
+   53  rm -rf extensions.conf 
+   54  vi extensions.conf
+   55  cd /etc/asterisk/
+   56  vi sip.conf
+   57  clear
+   58  cd
+   59  cd /home/barumugam/
+   60  which php
+   61  ll
+   62  cp agiscripts/* /var/lib/asterisk/agi-bin/
+   63  cd  /var/lib/asterisk/agi-bin/
+   64  sudo su -
+   65  vi extensions.conf
+   66  asterisk -r
+   67  vi sip.conf
+   68  ll
+   69  mv extensions.conf /etc/asterisk/
+   70  cd /etc/asterisk/
+   71  vi sip.conf 
+   72  asterisk -r
+   73  vi sip.conf 
+   74  asterisk -r
+   75  nat=force_rport,comedia
+   76  vi sip.conf 
+   77  asterisk -r
+   78  vi extensions.conf 
+   79  asterisk -r
+   80  vi extensions.conf 
+   81  asterisk -r
+   82  exit
+   83  asterisk -r
+   84  cd /var/lib/asterisk/agi-bin/
+   85  ll
+   86  php php_info.php 
+   87  which phpp
+   88  which php
+   89  asterisk -r
+   90  ll
+   91  chmod 755 *
+   92  ll
+   93  chown barumugam:barumugam *
+   94  chown -r  barumugam:barumugam *
+   95  ll
+   96  asterisk -r
+   97  chown -R barumugam:users *
+   98  ll
+   99  asterisk -r
+  100  vi /etc/asterisk/extensions.conf 
+  101  asterisk -r
+  102  vi testagi.php 
+  103  ll
+  104  php testagi.php 
+  105  ll
+  106  vi testagi.php 
+  107  asterisk -r
+  108  vi /etc/asterisk/extensions.conf 
+  109  asterisk -r
+  110  vi testagi.php 
+  111  asterisk -r
+  112  php testagi.php 
+  113  chmod 755 /var/lib/asterisk/agi-bin/*.php
+  114  ll
+  115  which php
+  116  vi testagi.php 
+  117  asterisk -r
+  118  ll
+  119  exit
+  120  asterisk -r
+  121  chown -R barumugam:users /var/lib/asterisk/agi-bin/*
+  122  cd /var/lib/asterisk/agi-bin/
+  123  ll
+  124  php php_info.php 
+  125  asterisk -r
+  126  service asterisk restart
+  127  asterisk -r
+  128  ll
+  129  exit
+  130  sudo yum install php php-cli php-gd php-mysql php-mbstring
+  131  php -v
+  132  php-cli
+  133  asterisk -r
+  134  cd /var/lib/asterisk/
+  135  ll
+  136  cd agi-bin/
+  137  ll
+  138  php php_info.php 
+  139  cd /etc/asterisk/
+  140  vi extensions.conf 
+  141  asterisk -r
+  142  ll
+  143  cd /var/lib/asterisk/agi-bin/
+  144  ll
+  145  netstat -anp | grep 834
+  146  netstat -anp | grep 5060
+  147  cd /etc/
+  148  ll
+  149  cd /etc/init/
+  150  ll
+  151  cd ..
+  152  ll
+  153  cd 
+  154  yum install sox 
+  155  which sox
+  156  /usr/bin/sox /home/barumugam/77.End\ Credit.mp3 -r 8000 -c 1 -s -2 /home/barumugam/credit.wav
+  157  which mpg123
+  158  yum install mpg123
+  159  mpg123 -w /home/barumugam/output.wav /home/barumugam/77.End\ Credit.mp3 
+  160  vi /etc/asterisk/sip.conf 
+  161  cd /var/lib/asterisk/agi-bin/
+  162  ll
+  163  vi testagi1.php 
+  164  asterisk -r
+  165  /usr/bin/sox /home/barumugam/output.wav -r 8000 -c 1 -s -2 /home/barumugam/output.wav
+  166  asterisk -r
+  167  mpg123 -w /home/barumugam/output.wav /home/barumugam/77.End\ Credit.mp3 
+  168  asterisk -r
+  169  ll
+  170  /usr/bin/sox /home/barumugam/output.wav -r 8000 -c 1 -s -2 /home/barumugam/output1.wav
+  171  vi testagi1.php 
+  172  asterisk -r
+  173  ll
+  174  cd 
+  175  cd /etc/asterisk/
+  176  vi indications.conf 
+  177  vi extensions.conf 
+  178  asterisk -r
+  179  vi /etc/asterisk/musiconhold.conf 
+  180  cp musiconhold.conf musiconhold.example.conf 
+  181  vi musiconhold.conf 
+  182  ll
+  183  vi musiconhold.conf 
+  184  service asterisk restart
+  185  vi musiconhold.conf 
+  186  vi extensions.conf 
+  187  service asterisk restart
+  188  asterisk -r
+  189  serivce asterisk restart
+  190  service asterisk restart
+  191  asterisk -r
+  192  vi sip.conf 
+  193  asterisk -r
+  194  exit
+  195  asterisk -r
+  196  cd /etc/asterisk/
+  197  ll
+  198  vi sip.conf 
+  199  asterisk -r
+  200  cd /var/spool/asterisk/outgoing/
+  201  ll
+  202  lll
+  203  ll
+  204  l
+  205  ll
+  206  lll
+  207  ll
+  208  l
+  209  ll
+  210  l
+  211  lcd ..
+  212  cd ..
+  213  ll
+  214  cd tmp/
+  215  ll
+  216  cd ..
+  217  cd outgoing/
+  218  ll
+  219  l
+  220  lll
+  221  ll
+  222  lll
+  223  ll
+  224  ps -ef | grep "php"
+  225  kill -9 13541
+  226  kill -9 4442
+  227  ps -ef | grep "php"
+  228  ll
+  229  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  230  ps -ef | grep "php"
+  231  kill -9 4688
+  232  vi /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  233  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  234  ps -ef | grep "php"
+  235  kill -9 4709
+  236  cd /
+  237  mkdir mVoice_audio
+  238  mkdir NFS
+  239  cp /home/barumugam/1423665017-3517.wav /mVoice_audio/
+  240  ll
+  241  cd mVoice_audio/
+  242  ll
+  243  cd ..
+  244  ps -ef | grep "php"
+  245  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  246  ps -ef | grep "php"
+  247  cd mVoice_audio/
+  248  ll
+  249  cd ../NFS/
+  250  ll
+  251  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  252  ps -ef | grep "php"
+  253  kill -9 4827
+  254  ll
+  255  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  256  ps -ef | grep "php"
+  257  kill -9 4949
+  258  ps -ef | grep "php"
+  259  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  260  ps -ef | grep "php"
+  261  kill -9 4963
+  262  ps -ef | grep "php"
+  263  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  264  yum install nfs* -y
+  265  service rpcbind start
+  266  chkconfig rpcbind on
+  267  service nfs start
+  268  chkconfig nfs on
+  269  cd /NFS/
+  270  ll
+  271  cd ..
+  272  ll
+  273  ll NFS/
+  274  ll /NFS
+  275  ll -al
+  276  chmod 755 mVoice_audio/ NFS/
+  277  vi /etc/exports 
+  278  service nfs restart
+  279  mount
+  280  ll
+  281  cd mVoice_audio/
+  282  ll
+  283  cd /etc/asterisk/
+  284  ll
+  285  vi sip.conf 
+  286  asterisk -r
+  287  ps -ef | grep "php"
+  288  kill -9 4981
+  289  ps -ef | grep "php"
+  290   php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  291  asterisk -r
+  292  cd /etc/asterisk/
+  293  vi sip.conf 
+  294  asterisk -r
+  295  vi sip.conf 
+  296  asterisk -r
+  297  service asterisk restart
+  298  vi sip.conf 
+  299  asterisk -r
+  300  vi sip.conf 
+  301  asterisk -r
+  302  vi sip.conf 
+  303  asterisk -r
+  304  vi sip.conf 
+  305  exit
+  306  asterisk -r
+  307  ps -ef | grep "php"
+  308  kill -9 12489
+  309  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  310  asterisk -r
+  311  ps -ef | grep "php"
+  312  kill -9 28885
+  313   php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  314  asterisk -r
+  315  ps -ef | grep "php"
+  316  kill -9 28969
+  317  ps -ef | grep "php"
+  318   php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  319  ps -ef | grep "php"
+  320  cd /var/lib/asterisk/agi-bin/
+  321  ll
+  322  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php 
+  323  ps -ef | grep "php"
+  324  kill -9 29371
+  325  php -f /var/lib/asterisk/agi-bin/mVoice_transFile_generator.php
+  326  ll
+  327  ps -ef | grep "php"
+  328  cd /
+  329  ll
+  330  cd NFS
+  331  ll
+  332  cd /etc/asterisk/
+  333  vi obd.conf 
+  334  cd
+  335  cd /
+  336  asterisk -r
+  337  cd /etc/asterisk/
+  338  ll
+  339  vi extensions.conf 
+  340  ll
+  341  vi obd.conf 
+  342  cd /var/lib/asterisk/agi-bin/
+  343  ll
+  344  vi mVoice_call_templates.php 
+  345  cd /etc/asterisk/
+  346  ll
+  347  vi extensions.conf 
+  348  vi obd.conf 
+  349  yum update -x openssl
+  350  yum update -x openssl*
+  351  exit
+  352  cp -u root  /etc/asterisk/ /home/barumugam/
+  353  cp -uroot  /etc/asterisk/ /home/barumugam/
+  354  cp -u -root  /etc/asterisk/ /home/barumugam/
+  355  cp  /etc/asterisk/ /home/barumugam/
+  356  cp -r  /etc/asterisk/* /home/barumugam/allasterisk/
+  357  cp /var/lib/asterisk/* /home/barumugam/agi-things/
+  358  cp -r /var/lib/asterisk/* /home/barumugam/agi-things/
+  359  history >/home/barumugam/history-10.130.225.125.txt

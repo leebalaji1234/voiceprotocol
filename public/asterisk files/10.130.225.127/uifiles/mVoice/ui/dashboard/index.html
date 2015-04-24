@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dashboard</title>
+<link href="css/style_css.css" rel="stylesheet" type="text/css"/>
+<link href="css/font_awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+  <div id="warpperInner">
+    <div id="header">
+      <h1>Navigation</h1>
+      <a class="dropdown-toggle element" data-original-title="Settings" href="#" data-toggle="tooltip" data-placement="bottom"> <i class="icon-cog"></i></a>
+      <div  class="logout log" style="float:right"> <a href="#"> <img alt="" src="images/logout_img.png"/> <span class="username">Logout</span> <b class="caret"></b></a> </div>
+    </div>
+    <!-- BEGIN SIDEBAR MENU -->
+    <ul class="sidebar-menu">
+      <li class="has-sub active"> <a href="javascript:;" class=""> <span class="icon-box"> <i class="icon-dashboard"></i></span> Dashboard <span class="arrow"></span> </a>
+        <ul class="sub">
+          <li><a class="" href="#">Dashboard 1</a></li>
+          <li class="active"><a class="" href="#">Dashboard 2</a></li>
+        </ul>
+      </li>
+      <li class="has-sub"> <a href="javascript:;" class=""> <span class="icon-box"> <i class="icon-book"></i></span>Subscripers<span class="arrow"></span> </a>
+        <ul class="sub">
+          <li><a class="" href="#">General</a></li>
+          <li><a class=""  href="#">Buttons</a></li>
+          <li><a class="" href="#">jQuery UI Component</a></li>
+          <li><a class=""  href="#">Tabs & Accordions</a></li>
+          <li><a class=""  href="#">Typography</a></li>
+          <li><a class=""  href="#">Tree View</a></li>
+          <li><a class=""  href="#">Nestable List</a></li>
+        </ul>
+      </li>
+      <li class="has-sub"> <a href="javascript:;" class=""> <span class="icon-box"><i class="icon-cogs"></i></span> Statistics <span class="arrow"></span> </a>
+        <ul class="sub">
+          <li><a class=""  href="#">Calendar</a></li>
+          <li><a class=""  href="#">Grids</a></li>
+          <li><a class=""  href="#">Visual Charts</a></li>
+          <li><a class=""  href="#">Conversations</a></li>
+          <li><a class=""  href="#">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="has-sub"> <a href="javascript:;" class=""> <span class="icon-box"><i class=" icon-qrcode"></i></i></span> Config <span class="arrow"></span> </a>
+        <ul class="sub">
+          <li><a class=""  href="#">Form Layouts</a></li>
+          <li><a class=""  href="#">Form Components</a></li>
+          <li><a class=""  href="#">Form Wizard</a></li>
+          <li><a class=""  href="#">Form Validation</a></li>
+          <li><a class=""  href="#">Dropzone File Upload </a></li>
+        </ul>
+      </li>
+     
+      <li><a class="" href="login.html"><span class="icon-box"><i class="icon-user"></i></span> Login Page</a></li>
+    </ul>
+    <!-- END SIDEBAR MENU -->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div id="main-content">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <h3 class="page-title"><a href="#">Dashboard<small>statistics and more</small></a></h3>
+          <ul class="breadcrumb clearfix">
+            <li> <a href="#"><i class="icon-home"></i></a><span class="divider">&nbsp;</span> </li>
+            <li> <a href="#">Admin Lab</a> <span class="divider">&nbsp;</span> </li>
+            <li><a href="#">Dashboard</a><span class="divider-last">&nbsp;</span></li>
+            <li class="pull-right search-wrap">
+              <form action="search_result.html" class="hidden-phone">
+                <div class="search-input-area">
+                  <input type="text" placeholder="Search" class="search-query" id=" ">
+                  <i class="icon-search"></i> </div>
+              </form>
+            </li>
+          </ul>
+          <div class="dashboard" id="page">
+            <div class="alert alert-info">
+              <button class="close" data-dismiss="alert">×</button>
+              Welcome to the <strong>dashboard</strong> Theme. Please don't forget to check all the pages! </div>
+            <!-- BEGIN OVERVIEW STATISTIC BARS-->
+            <div class="row-fluid circle-state-overview">
+              <div class="span2 responsive clearfix" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle turquoise-color"> <i class="icon-user"></i> </div>
+                  <p> <strong>+30</strong> New Users </p>
+                </div>
+              </div>
+              <div class="span2 responsive" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle red-color"> <i class="icon-tags"></i> </div>
+                  <p> <strong>+970</strong> Sales </p>
+                </div>
+              </div>
+              <div class="span2 responsive" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle green-color"> <i class="icon-shopping-cart"></i> </div>
+                  <p> <strong>+320</strong> New Order </p>
+                </div>
+              </div>
+              <div class="span2 responsive" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle gray-color"> <i class="icon-comments-alt"></i> </div>
+                  <p> <strong>+530</strong> Comments </p>
+                </div>
+              </div>
+              <div class="span2 responsive" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle purple-color"> <i class="icon-eye-open"></i> </div>
+                  <p> <strong>+430</strong> Unique Visitor </p>
+                </div>
+              </div>
+              <div class="span2 responsive" data-tablet="span3" data-desktop="span2">
+                <div class="circle-wrap">
+                  <div class="stats-circle blue-color"> <i class="icon-bar-chart"></i> </div>
+                  <p> <strong>+230</strong> Updates </p>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span12">
+                  <!-- BEGIN MAILBOX PORTLET-->
+                  <div class="widget">
+                    <div class="widget-title">
+                      <h4><i class="icon-envelope"></i> Mailbox</h4>
+                      <div class="tools pull-right mtop7 mail-btn">
+                        <div class="btn-group"> <a class="btn btn-small element" data-original-title="Share" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-share-alt"></i> </a> <a class="btn btn-small element" data-original-title="Report" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-exclamation-sign"> </i> </a> <a class="btn btn-small element" data-original-title="Delete" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-trash"> </i> </a> </div>
+                        <div class="btn-group"> <a class="btn btn-small element" data-original-title="Move to" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-folder-close"> </i> </a> <a class="btn btn-small element" data-original-title="Tag" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-tag"> </i> </a> </div>
+                        <div class="btn-group"> <a class="btn btn-small element" data-original-title="Prev" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-chevron-left"> </i> </a> <a class="btn btn-small element" data-original-title="Next" href="#" data-toggle="tooltip" data-placement="top"> <i class="icon-chevron-right"> </i> </a> </div>
+                      </div>
+                    </div>
+                    <div class="widget-body">
+                      <table>
+                        <tr>
+                          <th style="width:3%"> <div id="uniform-undefined" class="checker"> <span class="checked">
+                              <input class="no-margin" type="checkbox" style="opacity: 0;">
+                              </span> </div></th>
+                          <th style="width:17%"> Sent by </th>
+                          <th class="hidden-phone" style="width:55%"> Subject </th>
+                          <th class="right-align-text hidden-phone" style="width:12%"> Labels </th>
+                          <th class="right-align-text hidden-phone" style="width:12%"> Date </th>
+                        <tbody>
+                          <tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+<tr class="border">
+                            <td><div id="uniform-undefined" class="checker"> <span>
+                                <input class="no-margin" type="checkbox" style="opacity: 0;">
+                                </span> </div></td>
+                            <td> Dulal khan </td>
+                            <td class="hidden-phone"><strong> Senior Creative Designer </strong> <small class="info-fade"> Vector Lab </small> </td>
+                            <td class="right-align-text hidden-phone"><span class="label label label-info"> Read </span> </td>
+                            <td class="right-align-text hidden-phone"> Yesterday </td>
+                          </tr>
+                          <tr>
+                        <td><div id="uniform-undefined" class="checker"> <span class=""> </div></td>
+                        
+                          <td> Mosaddek Hossain </td>
+                          <td class="hidden-phone"><strong> Senior UI Engineer </strong> <small class="info-fade"> Vector Lab International </small> </td>
+                          <td class="right-align-text hidden-phone"><span class="label label label-success"> New </span> </td>
+                          <td class="right-align-text hidden-phone"> Today </td>
+                        </tr
+>
+
+</tbody>
+                        
+                      </table>
+                    </div>
+                  </div>
+                  <!-- END MAILBOX PORTLET-->
+                </div>
+              </div>
+            </div>
+            <!-- END MAILBOX PORTLET-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTAINER-->
+</div>
+</div>
+</div>
+</body>
+</html>

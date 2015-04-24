@@ -1,0 +1,5 @@
+Channel: SIP/100
+Context: obd
+Extension: 100
+Priority: 1
+Callerid: balaji

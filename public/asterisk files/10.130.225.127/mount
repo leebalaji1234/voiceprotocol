@@ -1,0 +1,12 @@
+mount
+/dev/mapper/sys-rootvol on / type ext4 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+devpts on /dev/pts type devpts (rw,gid=5,mode=620)
+tmpfs on /dev/shm type tmpfs (rw)
+/dev/sda1 on /boot type ext4 (rw)
+none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw)
+nfsd on /proc/fs/nfsd type nfsd (rw)
+10.130.225.125:/mVoice_audio on /NFS type nfs (rw,vers=4,addr=10.130.225.125,clientaddr=10.130.225.127)
+

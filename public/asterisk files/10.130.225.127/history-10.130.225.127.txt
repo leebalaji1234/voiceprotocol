@@ -1,0 +1,128 @@
+    1  pwd
+    2  which php
+    3  sudo yum install php php-cli php-gd php-mysql php-mbstring
+    4  which php
+    5  php -v
+    6  yum update
+    7  sudo su -
+    8  cd /var/www/
+    9  ll
+   10  chmod 775 html/
+   11  sudo chmod 775 html/
+   12  ll
+   13  cp /home/barumugam/mytest /var/www/html/
+   14  sudo cp /home/barumugam/mytest /var/www/html/
+   15  cd /var/www/html/
+   16  ll
+   17  cp /home/barumugam/mVoice/ /var/www/html/
+   18  sudo cp /home/barumugam/mVoice/ /var/www/html/
+   19  sudo cp /home/barumugam/ /var/www/html/
+   20  ll
+   21  cd
+   22  ll
+   23  sudo su -
+   24  cd /var/www/
+   25  ll
+   26  sudo su -
+   27  rm -rf agi-bin/
+   28  ll
+   29  cd /var/www/html/mVoice/audio/
+   30  ll
+   31  cd 1
+   32  ll
+   33  scp -r  1423665017-3517.wav barumugam@10.130.225.125:/mVoice_audio
+   34  scp -r  1423665017-3517.wav barumugam@10.130.225.125:/home/barumugam/
+   35  ll
+   36  ll
+   37  ls -pf | grep "php"
+   38  ls -ef | grep "php"
+   39  ps -ef | grep "php"
+   40  ll
+   41  php  /var/www/html/mVoice/cron/process_state_handler.php
+   42  vi  /var/www/html/mVoice/cron/process_state_handler.php
+   43  cd /var/www/html/mVoice/cron/
+   44  ll
+   45  vi trans_handler.php 
+   46  ps -ef | grep "php"
+   47  kill -9 14733
+   48  sudo kill -9 14733
+   49  ps -ef | grep "php"
+   50   php -f /var/www/html/mVoice/cron/trans_handler.php
+   51  ps -ef | grep "php"
+   52  mount
+   53  cd /
+   54  ll
+   55  mkdir NFS
+   56  sudo mkdir NFS
+   57  ll
+   58  sudo su -
+   59  cd /var/www/html/mVoice/
+   60  vi obdprocess.php 
+   61  ls
+   62  sudo su -
+   63  cd /var/www/html/mVoice/
+   64  vi menu.php 
+   65  cd /var/www/html/
+   66  ll
+   67  cd mVoice/
+   68  vi menu.php 
+   69  sudo su -
+   70  cd /var/www/
+   71  ll
+   72  cd html/
+   73  ll
+   74  cd mVoice/
+   75  ll
+   76  cd /var/www/html/
+   77  cd mVoice/
+   78  ll
+   79  cd ..
+   80  cd..
+   81  cd ..
+   82  cd html/
+   83  ll
+   84  exit
+   85  cd /
+   86  cd /var/www/
+   87  ls
+   88  cd html/
+   89  ls
+   90  cd mVoice/
+   91  ps -ef | grep ""php"
+   92  ps -ef | grep "php"
+   93  mv voiceapi/ /var/www/html/
+   94  sudo mv voiceapi/ /var/www/html/
+   95  cd /var/www/html/
+   96  ll
+   97  cd /var/www/html/
+   98  cd mVoice/
+   99  vi obdprocess.php 
+  100  sudo su -
+  101  ps -ef | grep "ph"
+  102  ps -ef | grep "php"
+  103  ll
+  104  ps -ef | grep "php"
+  105  cd /var/www/html/
+  106  cd mv
+  107  cd mVoice/
+  108  ll
+  109  ls file
+  110  cd ..
+  111  cd voiceapi/
+  112  ll
+  113  cd ..
+  114  sudo su -
+  115  vi test1.txt
+  116  vi test2.txt
+  117  vi test3.txt
+  118  cat test* > test.txt
+  119  ll
+  120  cat test.txt 
+  121  rm -rf test*.txt
+  122  ll
+  123  exit
+  124  sudo su -
+  125  exit
+  126  cd /var/www/html/mVoice/
+  127  sudo cp -r /var/www/html/* /home/barumugam/uifiles/
+  128  history > /home/barumugam/history-10.130.225.127.txt
